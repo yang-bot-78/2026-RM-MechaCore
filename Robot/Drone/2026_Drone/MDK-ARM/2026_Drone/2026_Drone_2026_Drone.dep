@@ -3380,9 +3380,9 @@ I (E:\keli\ARM\ARMCLANG\include\libcxx\iterator)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__functional_base)(0x5E0BB2B6)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\tuple)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stdexcept)(0x5E0BB2B8)
-F (..\User\Task\Callback.cpp)(0x6968EAFC)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/callback.o -MD)
+F (..\User\Task\Callback.cpp)(0x696B3907)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/callback.o -MD)
 I (..\User\Task\Callback.hpp)(0x6968EAE1)
-I (..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3480,16 +3480,16 @@ I (..\User\..\user\core\HAL\CAN\interface\can_bus.hpp)(0x68FC7EC6)
 I (..\User\..\user\core\HAL\CAN\interface\can_device.hpp)(0x68FC7EDA)
 I (..\Core\Inc\can.h)(0x6968E373)
 I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
-I (..\User\Task\MotorTask.hpp)(0x6968E801)
+I (..\User\Task\MotorTask.hpp)(0x696B417C)
 I (..\User\Task\..\core\HAL\CAN\can_hal.hpp)(0x68FC7EC6)
-I (..\User\Task\ControlTask.hpp)(0x6968EAAD)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\ControlTask.hpp)(0x696B417B)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.hpp)(0x694232D8)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\cmath)(0x5E0BB2B8)
 F (..\User\Task\Callback.hpp)(0x6968EAE1)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/callback_1.o -MD)
-I (..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3587,10 +3587,10 @@ I (..\User\..\user\core\HAL\CAN\interface\can_bus.hpp)(0x68FC7EC6)
 I (..\User\..\user\core\HAL\CAN\interface\can_device.hpp)(0x68FC7EDA)
 I (..\Core\Inc\can.h)(0x6968E373)
 I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
-I (..\User\Task\MotorTask.hpp)(0x6968E801)
+I (..\User\Task\MotorTask.hpp)(0x696B417C)
 I (..\User\Task\..\core\HAL\CAN\can_hal.hpp)(0x68FC7EC6)
-I (..\User\Task\ControlTask.hpp)(0x6968EAAD)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\ControlTask.hpp)(0x696B417B)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.hpp)(0x694232D8)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
@@ -3598,8 +3598,8 @@ I (E:\keli\ARM\ARMCLANG\include\libcxx\cmath)(0x5E0BB2B8)
 F (..\User\Task\Communication.cpp)(0x6968EAE1)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/communication.o -MD)
 I (..\User\Task\Communication.hpp)(0x6968EAE2)
 F (..\User\Task\Communication.hpp)(0x6968EAE2)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/communication_1.o -MD)
-F (..\User\Task\ControlTask.cpp)(0x6968EB95)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/controltask.o -MD)
-I (..\User\Task\ControlTask.hpp)(0x6968EAAD)
+F (..\User\Task\ControlTask.cpp)(0x696B44E6)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/controltask.o -MD)
+I (..\User\Task\ControlTask.hpp)(0x696B417B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3620,7 +3620,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h)(0x68B3FA4B)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\Task\..\core\BSP\RemoteControl\DT7.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\state_watch.hpp)(0x694232D8)
 I (..\Core\Inc\main.h)(0x6968E374)
@@ -3701,7 +3701,7 @@ I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.hpp)(0x694232D8)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
-F (..\User\Task\ControlTask.hpp)(0x6968EAAD)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/controltask_1.o -MD)
+F (..\User\Task\ControlTask.hpp)(0x696B417B)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/controltask_1.o -MD)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3722,7 +3722,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x68B3FA4B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h)(0x68B3FA4B)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\Task\..\core\BSP\RemoteControl\DT7.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\state_watch.hpp)(0x694232D8)
 I (..\Core\Inc\main.h)(0x6968E374)
@@ -3803,8 +3803,8 @@ I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.hpp)(0x694232D8)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
-F (..\User\Task\MotorTask.cpp)(0x6968EBBA)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/motortask.o -MD)
-I (..\User\Task\MotorTask.hpp)(0x6968E801)
+F (..\User\Task\MotorTask.cpp)(0x696B4340)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/motortask.o -MD)
+I (..\User\Task\MotorTask.hpp)(0x696B417C)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3889,8 +3889,8 @@ I (E:\keli\ARM\ARMCLANG\include\libcxx\iterator)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__functional_base)(0x5E0BB2B6)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\tuple)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stdexcept)(0x5E0BB2B8)
-I (..\User\Task\ControlTask.hpp)(0x6968EAAD)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\ControlTask.hpp)(0x696B417B)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\Task\..\core\BSP\RemoteControl\DT7.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\state_watch.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\buzzer_manager.hpp)(0x694232D8)
@@ -3908,7 +3908,7 @@ I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.hpp)(0x694232D8)
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
-F (..\User\Task\MotorTask.hpp)(0x6968E801)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/motortask_1.o -MD)
+F (..\User\Task\MotorTask.hpp)(0x696B417C)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/motortask_1.o -MD)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -3993,8 +3993,8 @@ I (E:\keli\ARM\ARMCLANG\include\libcxx\iterator)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__functional_base)(0x5E0BB2B6)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\tuple)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stdexcept)(0x5E0BB2B8)
-I (..\User\Task\ControlTask.hpp)(0x6968EAAD)
-I (..\User\..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\ControlTask.hpp)(0x696B417B)
+I (..\User\..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\User\Task\..\core\BSP\RemoteControl\DT7.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\state_watch.hpp)(0x694232D8)
 I (..\User\..\user\core\BSP\Common\StateWatch\buzzer_manager.hpp)(0x694232D8)
@@ -4013,7 +4013,7 @@ I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_gimbal.
 I (..\User\..\User\core\BSP\Common\FiniteStateMachine\FiniteStateMachine_launch.hpp)(0x694232D8)
 I (..\User\..\User\core\Alg\PID\pid.hpp)(0x694232D8)
 F (..\User\Task\SerivalTask.cpp)(0x6968E7D6)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/serivaltask.o -MD)
-I (..\User\Task\SerivalTask.hpp)(0x6968EB4E)
+I (..\User\Task\SerivalTask.hpp)(0x696B3FE2)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
@@ -4111,7 +4111,7 @@ I (..\User\..\user\core\HAL\CAN\interface\can_bus.hpp)(0x68FC7EC6)
 I (..\User\..\user\core\HAL\CAN\interface\can_device.hpp)(0x68FC7EDA)
 I (..\Core\Inc\can.h)(0x6968E373)
 I (..\User\Task\..\core\BSP\Motor\DM\DmMotor.hpp)(0x69466DDF)
-F (..\User\Task\SerivalTask.hpp)(0x6968EB4E)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/serivaltask_1.o -MD)
+F (..\User\Task\SerivalTask.hpp)(0x696B3FE2)(-xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User-I./RTE/_2026_Drone-IE:/keli/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o 2026_drone/serivaltask_1.o -MD)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x68B3FA4B)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (E:\keli\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)

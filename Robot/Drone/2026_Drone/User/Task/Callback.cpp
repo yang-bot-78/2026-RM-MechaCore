@@ -15,3 +15,25 @@ extern "C" void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t S
     }   
 
 }
+
+extern "C" void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    HAL::CAN::Frame rx_frame;
+
+    auto &can1 = HAL::CAN::get_can_bus_instance().get_device(HAL::CAN::CanDeviceId::HAL_Can1);
+    if(hcan == can1.get_handle())
+    {
+        can1.receive(rx_frame);
+    }
+}
+
+extern "C" void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    HAL::CAN::Frame rx_frame;
+
+    auto &can2 = HAL::CAN::get_can_bus_instance().get_device(HAL::CAN::CanDeviceId::HAL_Can2);
+    if(hcan == can2.get_handle())
+    {
+        can2.receive(rx_frame);
+    }
+}

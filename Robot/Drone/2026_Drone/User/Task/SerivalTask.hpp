@@ -8,7 +8,27 @@
 #include "../core/BSP/Motor/Dji/DjiMotor.hpp"
 #include "../core/BSP/Motor/DM/DmMotor.hpp"
 
+typedef struct
+{
+    float target_velocity;
+    float target_yaw;   
+    float target_pitch;
+    float target_dial;
+    float target_surgewheel[2];
+    float normalized_feedback;
+}ControlTask;
+
+typedef struct
+{
+    float out_yaw;
+    float out_pitch;
+}Output_gimbal;
+
+extern ControlTask gimbal_target;
+
 extern BSP::REMOTE_CONTROL::RemoteController DR16;
 extern uint8_t dr16_rx_buffer[18];
+
+//extern BSP::Motor::Dji::GM6020<1> Motor6020;
 
 #endif // DEBUG
