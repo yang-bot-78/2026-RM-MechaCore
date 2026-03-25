@@ -3,29 +3,25 @@
 
 namespace
 {
-    constexpr float kDegToRad = 0.01745329251994329577f;
-    constexpr float kRadToDeg = 57.295779513082320876f;
-    constexpr float kTwoPi = 6.2831853071795864769f;
-    constexpr float kGimbalYawMinDeg = 30.0f;
-    constexpr float kGimbalYawMaxDeg = 85.0f;
-    constexpr float kGimbalPitchMinRad = -3.3f;
-    constexpr float kGimbalPitchMaxRad = -2.45f;
-    constexpr float kKeyboardMouseYawScale = 0.003f;
-    constexpr float kKeyboardMousePitchScale = 0.00005f;
-    constexpr float kKeyboardYawStepDeg = 0.25f;
-    constexpr float kKeyboardPitchStepRad = 0.004f;
-    constexpr float kDialStop = 0.0f;
-    constexpr float kDialRapid = -550.0f;
-    constexpr float kSurgewheelNominal = 5500.0f;
-    constexpr float kSurgewheelBoost = 6200.0f;
-    constexpr float kRemoteSpinWheelThreshold = -0.85f;
-    constexpr float kRemoteDialDeadband = 0.05f;
-    constexpr uint8_t kSwitchUp = 1U;
-    constexpr uint8_t kSwitchMiddle = 3U;
-    constexpr float kPitchZeroDeadbandRad = 0.01f;
-    constexpr float kPitchFeedbackFilterAlpha = 0.15f;
-    constexpr float kAngleWrapUpperDeg = 180.0f;
-    constexpr float kAngleWrapLowerDeg = -180.0f;
+    constexpr float kDegToRad = 0.01745329251994329577f;     // 角度转弧度系数
+    constexpr float kTwoPi = 6.2831853071795864769f;         // 2pi
+    constexpr float kGimbalYawMinDeg = 30.0f;                // yaw 目标最小限位角度
+    constexpr float kGimbalYawMaxDeg = 85.0f;                // yaw 目标最大限位角度
+    constexpr float kGimbalPitchMinRad = -3.3f;              // pitch 目标最小限位弧度
+    constexpr float kGimbalPitchMaxRad = -2.45f;             // pitch 目标最大限位弧度
+    constexpr float kKeyboardMouseYawScale = 0.003f;         // 键鼠模式下鼠标 yaw 输入缩放系数
+    constexpr float kKeyboardMousePitchScale = 0.00005f;     // 键鼠模式下鼠标 pitch 输入缩放系数
+    constexpr float kKeyboardYawStepDeg = 0.25f;             // 键盘按键控制 yaw 时的单次步进角度
+    constexpr float kKeyboardPitchStepRad = 0.004f;          // 键盘按键控制 pitch 时的单次步进弧度
+    constexpr float kDialRapid = -550.0f;                    // 拨弹盘连发目标转速
+    constexpr float kSurgewheelNominal = 5500.0f;            // 摩擦轮正常模式目标转速
+    constexpr float kSurgewheelBoost = 6200.0f;              // 摩擦轮加速模式目标转速
+    constexpr float kRemoteSpinWheelThreshold = -0.85f;      // 遥控器开启摩擦轮的左摇杆阈值
+    constexpr float kRemoteDialDeadband = 0.05f;             // 遥控器拨弹盘控制死区
+    constexpr uint8_t kSwitchUp = 1U;                        // 遥控器拨杆上档状态值
+    constexpr uint8_t kSwitchMiddle = 3U;                    // 遥控器拨杆中档状态值
+    constexpr float kPitchZeroDeadbandRad = 0.01f;           // pitch 反馈接近零位时的死区范围
+    constexpr float kPitchFeedbackFilterAlpha = 0.15f;       // pitch 反馈一阶滤波系数
 
     constexpr bool kYawStepTestEnable = false;      // true: 开启阶跃测试
     constexpr float kYawStepTargetRpm = 10.0f;     // 阶跃幅值
@@ -75,7 +71,7 @@ namespace
     float get_remote_dial_target_rpm()
     {
         const float dial_input = apply_deadband(DR16.get_left_y(), kRemoteDialDeadband);
-        return clamp_float(dial_input * (-kDialRapid), kDialRapid, kDialStop);
+        return clamp_float(dial_input * (-kDialRapid), kDialRapid, 0.0f);
     }
 
 
@@ -135,26 +131,21 @@ namespace
     }
 
     //pitch角度归一
-    float normalize_angle_deg(float angle_deg)
-    {
-        while (angle_deg >= kAngleWrapUpperDeg)
-        {
-            angle_deg -= 360.0f;
-        }
-        while (angle_deg < kAngleWrapLowerDeg)
-        {
-            angle_deg += 360.0f;
-        }
-        if (angle_deg >= 0.0f)
-        {
-            angle_deg -= 360.0f;
-        }
-        return angle_deg;
-    }
-
     float normalize_angle_rad(float angle_rad)
     {
-        return normalize_angle_deg(angle_rad * kRadToDeg) * kDegToRad;
+        while (angle_rad >= 3.14159265358979323846f)
+        {
+            angle_rad -= kTwoPi;
+        }
+        while (angle_rad < -3.14159265358979323846f)
+        {
+            angle_rad += kTwoPi;
+        }
+        if (angle_rad >= 0.0f)
+        {
+            angle_rad -= kTwoPi;
+        }
+        return angle_rad;
     }
 }
 
@@ -181,12 +172,11 @@ Output_launch launch_output;
 Vofa_send vofa_send_t;
 TestData test_data;
 FeedbackData feedback_data;
-float pitch_feedback_offset_rad = 4.6f;
 
 float get_pitch_feedback_raw_rad()
 {
     const float imu_pitch_rad = HI12.GetPitch_180() * kDegToRad;
-    return normalize_angle_rad(imu_pitch_rad - pitch_feedback_offset_rad);
+    return normalize_angle_rad(imu_pitch_rad);
 }
 
 float get_pitch_feedback_rad()
@@ -462,7 +452,7 @@ void launch_keyboard()
     const bool boost = DR16.get_key(BSP::REMOTE_CONTROL::RemoteController::KEY_SHIFT);
 
     set_surgewheel_target(spin_wheel, boost);
-    gimbal_target.target_dial = trigger_fire ? kDialRapid : kDialStop;
+    gimbal_target.target_dial = trigger_fire ? kDialRapid : 0.0f;
 
     dial_pid.UpDate(gimbal_target.target_dial, Motor3508.getVelocityRpm(1));
     surgewheel_pid[0].UpDate(gimbal_target.target_surgewheel[0], -Motor3508.getVelocityRpm(2));
@@ -516,7 +506,7 @@ void main_loop_launch(uint8_t left_sw, uint8_t right_sw, bool is_online)
             break;
         case LAUNCH_CEASEFIRE:
             Settarget_launch();
-            gimbal_target.target_dial = kDialStop;
+            gimbal_target.target_dial = 0.0f;
             set_surgewheel_target(true);
             launch_ceasefire();
             break;
@@ -526,7 +516,7 @@ void main_loop_launch(uint8_t left_sw, uint8_t right_sw, bool is_online)
             Settarget_launch();
             if (!spin_wheel)
             {
-                gimbal_target.target_dial = kDialStop;
+                gimbal_target.target_dial = 0.0f;
             }
             set_surgewheel_target(spin_wheel);
             launch_rapidfire();

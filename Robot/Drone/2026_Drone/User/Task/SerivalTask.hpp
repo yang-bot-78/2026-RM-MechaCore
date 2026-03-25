@@ -9,6 +9,7 @@
 #include "../core/BSP/Motor/Dji/DjiMotor.hpp"
 #include "../core/BSP/Motor/DM/DmMotor.hpp"
 #include "../core/Alg/Filter/Filter.hpp"
+#include "../User/core/BSP/SimpleKey/SimpleKey.hpp"
 
 typedef struct
 {

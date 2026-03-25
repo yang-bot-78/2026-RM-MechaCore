@@ -713,6 +713,11 @@
               <FileType>8</FileType>
               <FilePath>..\User\core\BSP\RemoteControl\DT7.hpp</FilePath>
             </File>
+            <File>
+              <FileName>SimpleKey.hpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\core\BSP\SimpleKey\SimpleKey.hpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
